@@ -6,12 +6,15 @@
       apt:
         name: apache2
         state: present
+      when: ansible_os_family=="Debian"
     - name: install git on the node side
       apt:
         name: git
         state: present
+      when: ansible_os_family=="Debian"
     - name: start webserver on the node side
       service:
         name: apache2
-        state: started
+        state: starte
+      when: ansible_os_family=="Debian"
 
