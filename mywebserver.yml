@@ -15,6 +15,6 @@
     - name: start webserver on the node side
       service:
         name: apache2
-        state: starte
+        state: start
       when: ansible_os_family=="Debian"
 
