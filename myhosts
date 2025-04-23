@@ -5,9 +5,5 @@
 [linuxserver]
 172.31.33.38
 
-[myubuntuserver:vars]
-key=value
-mywebpackubuntu=apache2222222
-mywebpackamazon=httpd
 
 
