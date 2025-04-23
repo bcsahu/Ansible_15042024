@@ -7,7 +7,7 @@
 
 [myubuntuserver:vars]
 key=value
-mywebpackubuntu=apache2
+mywebpackubuntu=apache2222222
 mywebpackamazon=httpd
 
 
