@@ -32,4 +32,9 @@
         name: httpd
         state: present
       when: ansible_os_family=="RedHat"
+    - name: start webserver on the RedHat node side
+      service:
+        name: httpd
+        state: started
+      when: ansible_os_family=="RedHat"
 
