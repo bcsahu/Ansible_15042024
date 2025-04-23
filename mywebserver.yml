@@ -3,6 +3,9 @@
   become: yes
   gather_facts: yes
   tasks:
+    - name: Display all facts
+      debug:
+        var: ansible_facts
     - name: install apache2 webserve:r
       apt:
         name: apache2
