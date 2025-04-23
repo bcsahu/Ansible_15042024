@@ -1,6 +1,6 @@
+[myubuntuserver]
 172.31.2.118
+
+[linuxserver]
 172.31.33.38
-[mywebservers: vars]
-key=value
-mywebpackonubuntu=apache2
-mywebpackonamazon=httpd
+
