@@ -14,7 +14,7 @@
         msg: "This system is running {{ ansible_facts['os_family'] }} OS"
     - name: install apache2 webserver
       apt:
-        name: apache2
+        name: "{{mywebpackubuntu}}"
         state: present
       when: ansible_os_family=="Debian"
     - name: install git on the node side
@@ -24,18 +24,18 @@
       when: ansible_os_family=="Debian"
     - name: start webserver on the node side
       service:
-        name: apache2
+        name: "{{mywebpackubuntu}}"
         state: started
       when: ansible_os_family=="Debian"
     - name: start webserver on the RedHat node side
       dnf:
-        name: httpd
+        name: "{{mywebpackamazon}}"
         state: present
       when: ansible_os_family=="RedHat"
 
     - name: start webserver on the RedHat node side
       service:
-        name: httpd
+        name: "{{mywebpackamazon}}"
         state: started
       when: ansible_os_family=="RedHat"
 
