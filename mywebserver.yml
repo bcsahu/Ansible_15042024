@@ -3,9 +3,9 @@
   become: yes
   gather_facts: yes
   tasks:
-    - name: Display all facts
+    - name: Display the IP address
       debug:
-        var: ansible_facts
+        var: ansible_facts['default_ipv4']['address']
     - name: install apache2 webserve:r
       apt:
         name: apache2
